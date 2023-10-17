@@ -33,6 +33,7 @@ def with_cuda():
 
 def get_pytorch_version():
     # if it is 1.7.1+cuda101, then strip +cuda101
+    print('$$$$$$$$$$$$$$$$$$$$$$$$$',torch.__version__.split('+')[0])
     return torch.__version__.split('+')[0]
 
 
